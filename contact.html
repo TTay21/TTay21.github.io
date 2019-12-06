@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Lobster+Two|Noto+Sans+TC|Playfair+Display|Prata&display=swap" rel="stylesheet" type="text/css">
+    
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/slicknav.min.css">
+  
+  <link rel="stylesheet" href="contactstyles.css">
+  
+ <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/jquery.slicknav.min.js"></script>
+
+ <!--  Now add the following script to create a slicknav (mobile) version of your navigation menu, then attach it to an empty nav element you'll add before your navigation menu in your HTML. In this case, I've given my navigation menu the .nav_menu class; insert the class attached to your own navigation menu where you see .nav_menu in the following script. In the HTML, you'll see I've added an empty nav element just before .nav_menu and given it the ID #mobilemenu. That ID appears in the script below, too. Insert the class or ID name you've attached to your empty nav element where you see #mobilemenu in the following script. -->
+ <script type="text/javascript">
+          $(document).ready(function () {
+            $(".navMenu").slicknav({
+                prependTo: ".mobilemenu"
+            });
+        });
+    </script>
+
+    <!-- a Google font -->
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lobster+Two&display=swap" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css?family=Prata&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome for search icon -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <title>Contact</title>
+</head>
+
+
+
+
+<body>
+    <div class="grid">
+        <div class="header">
+                <img src="lwl icon.PNG" height = "100px">
+                <div class="navMenu">
+                    <nav>
+                        <div class="button"><a id ="buttonA" href="index.html">Home</a></div>
+                        <div class="button"><a id ="buttonA" href="about.html">About</a></div>
+                        <div class="button"><a id  ="buttonA" href="magazine.html">Magazine</a></div>
+                        <div class="button"><a id  ="buttonA" href="#">Blog</a></div>
+                        
+                        <div class="button"><a id  ="buttonA" href="#">Interviews</a>
+                            <div class="dropdownButton"><a id ="dropdownButtonA" href="#">Success Stories</a></div>
+                            <div class="dropdownButton"><a id ="dropdownButtonA" href="#">Event & Media</a></div>
+                        </div> 
+
+                        <div class="button"><a id ="buttonA" href="#">College Boulevard</a></div>
+                        <div class="button"><a id  ="buttonA" href="#">Grow Your Biz</a></div>
+
+                        <div class="button"><a id  ="buttonA" href="contact.html">Contact</a>
+                        </div>
+                    </nav>
+                </div>
+                <nav class="mobilemenu"></nav>
+
+        </div>
+        <div class="heading"> <h1>We would love to hear from you!</h1></div>
+
+    <div class="container1">
+    <div class="inquiries">
+      <h3>Have questions?</h3>
+      <p> We want to get to know you and for you to get to know us! 
+        <br>
+        <br>
+        Feel free to contact us with any questions about our platform and services. Tell us your comments and concerns. Tell us your suggestions on what type of content or creators you would like to see next! 
+        We would love to hear from you and any feeback you may have!
+      </p>
+      <br>
+      <br>
+      <br>
+      <br>
+      <form>
+          <input type="text" class="form-control" placeholder="First name">
+          <input type="text" class="form-control" placeholder="Last name">
+          <input type="text" class="form-control" placeholder="email address">
+          <input type="text" class="form-control" placeholder="your response">
+          <button type="submit" value="Submit"> Submit </button>
+      </form>
+    </div>
+  </div>
+
+  <div class="container2">
+    <div class="share">
+      <h3> Want to share your story?</h3>
+      <p> Advertise with Leading with Lee Magazine!</p>
+      <p>Being featured in Leading with Lee Magazine will provide a platform to showcase your achievements and accolades, 
+        be viewed as an influencer, and share your brand with our targeted audience of millennial leaders, trendsetters, 
+        and game changers. A feature with us will provide recognition and credibility for all of your many outstanding 
+        contributions.
+        <br>
+        <br>
+        Your featured article will be made available to our audience: distinguished and respected millennial entrepreneurs, media 
+        personalities, artists, designers, and individuals from a variety of industries. Your featured article will be available 
+        in our print or digital platforms, as well as published on our website and our newsletter. Your story will also 
+        be shared on our Instagram and Facebook. Once published, you will have access to share your featured article on your platforms.
+          <br>
+          <br>
+          We celebrate and promote black owned businesses everyday! Join the movement!</p>
+      <form>
+        <input type="text" class="form-control" placeholder="First name">
+        <input type="text" class="form-control" placeholder="email address">
+        <input type="text" class="form-control" placeholder="tell us about yourself and your business">
+        <input type="text" class="form-control" placeholder="list your website and social media handles">
+
+        <select name="service">
+            <option value="insta">Instagram Advertisement </option>
+            <option value="feature">Website Q&A</option>
+            <option value="1pg">1 page Print Advertisement</option>
+            <option value="2pg">2 page Print Advertisement</option>
+            <option value="3pg">3 page Print Story Spread</option>
+            <option value="5pg">5 page Print Story Spread</option>
+            <option value="5pg">Back Cover</option>
+          </select>        
+          <button type="submit" value="Submit"> Submit </button>
+      </form>
+    </div>
+    </div>
+
+
+
+           
+<footer class="footer">
+    <div class="footer-body">
+      <div class="footer-title"><h3> Where Boss Millennials Connect, Build, & Grow!</h3></div>
+      <div class="footer-info"> 
+        <p> Join Our Mailing List: </p>
+        <form>
+            <div class="form-row">
+              <div class="col">
+                <input type="text" class="form-control" placeholder="Name">
+              </div>
+              <div class="col">
+                <input type="text" class="form-control" placeholder="email address">
+              </div>
+              <div class="btn">
+                  <button type="submit" value="Submit"> Submit</button><!-- fix the submit button!!!!-->
+              </div>
+            </div>
+          </form>
+          <br>
+          <a href="https://www.facebook.com/leadingwithlee/"><i class="fab fa-facebook fa-2x"></i></a>
+          <a href="https://www.instagram.com/lwlmagazine/"><i class="fab fa-instagram fa-2x"></i></a>
+          <a href="https://www.pinterest.com/whetstonelee/"><i class="fab fa-pinterest fa-2x"></i></a>
+          <a href="https://www.pinterest.com/whetstonelee/"><i class="fab fa-twitter fa-2x"></i></a>
+          <a href="https://www.youtube.com/channel/UCxPWnyBdntmbR8cSzbzsmYQ/featured?view_as=subscriber"><i class="fab fa-youtube fa-2x"></i></a>
+         <div class="copyright">
+          <br>
+            <p> &copy 2019 by Leading with Lee Magazine</p>
+        </div>
+      </div>
+    </div>
+    </footer>
+
+    </div>
+</body>
+</html>
