@@ -4,11 +4,25 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css?family=Lobster+Two|Noto+Sans+TC|Playfair+Display|Prata&display=swap" rel="stylesheet" type="text/css">
     
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/slicknav.min.css">
+  
+  <link rel="stylesheet" href="styles.css">
+  
+ <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/jquery.slicknav.min.js"></script>
+
+ <!--  Now add the following script to create a slicknav (mobile) version of your navigation menu, then attach it to an empty nav element you'll add before your navigation menu in your HTML. In this case, I've given my navigation menu the .nav_menu class; insert the class attached to your own navigation menu where you see .nav_menu in the following script. In the HTML, you'll see I've added an empty nav element just before .nav_menu and given it the ID #mobilemenu. That ID appears in the script below, too. Insert the class or ID name you've attached to your empty nav element where you see #mobilemenu in the following script. -->
+ <script type="text/javascript">
+          $(document).ready(function () {
+            $(".navMenu").slicknav({
+                prependTo: ".mobilemenu"
+            });
+        });
+    </script>
+
 
     <!-- a Google font -->
     <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
@@ -17,10 +31,8 @@
 
     <!-- FontAwesome for search icon -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-    <title>Final Project</title>
+    <title>Home</title>
 </head>
-
-
 
 
 <body>
@@ -29,51 +41,25 @@
                 <img src="lwl icon.PNG" height = "100px">
                 <div class="navMenu">
                         <nav>
-                            <div class="button"><a href="#">Home</a></div>
-                            <div class="button"><a href="#">About</a></div>
-                            <div class="button"><a href="#">Magazine</a></div>
-                            <div class="button"><a href="#">Blog</a></div>
+                            <div class="button"><a id ="buttonA" href="index.html">Home</a></div>
+                            <div class="button"><a id ="buttonA" href="about.html">About</a></div>
+                            <div class="button"><a id  ="buttonA" href="magazine.html">Magazine</a></div>
+                            <div class="button"><a id  ="buttonA" href="#">Blog</a></div>
                             
-                            <div class="button"><a href="#">Interviews</a>
-                                <div class="dropdownButton"><a href="#">Success Stories</a></div>
-                                <div class="dropdownButton"><a href="#">Event & Media</a></div>
+                            <div class="button"><a id  ="buttonA" href="#">Interviews</a>
+                                <div class="dropdownButton"><a id ="dropdownButtonA" href="#">Success Stories</a></div>
+                                <div class="dropdownButton"><a id ="dropdownButtonA" href="#">Event & Media</a></div>
                             </div> 
 
-                            <div class="button"><a href="#">College Boulevard</a></div>
-                            <div class="button"><a href="#">Grow Your Biz</a></div>
+                            <div class="button"><a id ="buttonA" href="#">College Boulevard</a></div>
+                            <div class="button"><a id  ="buttonA" href="#">Grow Your Biz</a></div>
 
-                            <div class="button"><a href="#">Contact</a>
-                                <div class="dropdownButton"><a href="#">Inquiries</a></div>
-                                <div class="dropdownButton"><a href="#">Share Your Story</a></div>
+                            <div class="button"><a id  ="buttonA" href="contact.html">Contact</a>
                             </div>
                         </nav>
                     </div>
+                    <nav class="mobilemenu"></nav>
 
-                    <nav class="navbar navbar-expand-sm navbar-light">
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                    </button>    
-                        <!-- navigation bar links -->
-                        <div class="collapse navbar-collapse" id="navMenu">
-                            <div class="button"><a href="#">Home</a></div>
-                            <div class="button"><a href="#">About</a></div>
-                            <div class="button"><a href="#">Magazine</a></div>
-                            <div class="button"><a href="#">Blog</a></div>
-                            
-                            <div class="button"><a href="#">Interviews</a>
-                                <div class="dropdownButton"><a href="#">Success Stories</a></div>
-                                <div class="dropdownButton"><a href="#">Event & Media</a></div>
-                            </div> 
-
-                            <div class="button"><a href="#">College Boulevard</a></div>
-                            <div class="button"><a href="#">Grow Your Biz</a></div>
-
-                            <div class="button"><a href="#">Contact</a>
-                                <div class="dropdownButton"><a href="#">Inquiries</a></div>
-                                <div class="dropdownButton"><a href="#">Share Your Story</a></div>
-                            </div>
-                        </div>
-                        
         </div>
 
 
@@ -86,46 +72,85 @@
             </div>
         </div>
 
-            <div class="contentOne">Placeholder for Advertising!</div>
+            <div class="contentOne">
+              <div class="contentOnePhoto">                
+                <div class="container">
+                  </div>
+              <div class="photoButton"><a href="magazine.html">Learn More</a></div>
+            </div>
+            </div>
             
-            <div class="contentTwo">Content</div>
+            <div class="contentTwo">
+              <div class="contentTwoPhoto">
+                <div class="collegeB">
+              <h1>Need <br>College<br>Advice?</h1>
+              <div class="podcastButton"><a href="#">Listen to Podcast</a></div>
+            </div>
 
-            <div class="contentThree">Content</div>
+            </div></div>
 
-            <div class="blogPostOne">Blog Post</div>
-            <div class="blogPostTwo">Blog Post</div>
-           
-<footer class="footer">
-    <div class="footer-body">
-      <div class="footer-title"><p> Where Boss Millennials Connect, Build, & Grow!</p></div>
-      <div class="footer-info"> 
-        <p> Join Our Mailing List: </p>
-        <form>
-            <div class="form-row">
-              <div class="col">
-                <input type="text" class="form-control" placeholder="Name">
-              </div>
-              <div class="col">
-                <input type="text" class="form-control" placeholder="email address">
-              </div>
-              <div class="btn">
-                  <button type="submit" value="Submit"> <!-- fix the submit button!!!!-->
+            <div class="contentThree">
+              <div class="contentThreePhoto">
+                <div class="containerA">
+                  <h1 class="smaller">Want To Be Featured?</h1>
+                </div>
+                <div class="advertiseButton"><a href="Contact.html">Advertise With Us</a></div>
               </div>
             </div>
-          </form>
-          <br>
-        <i class="fab fa-facebook fa-2x"></i>
-        <i class="fab fa-instagram fa-2x"></i>
-        <i class="fab fa-pinterest fa-2x"></i>
-        <i class="fab fa-twitter fa-2x"></i>
-        <i class="fab fa-youtube fa-2x"></i>
-        <div class="copyright">
-          <br>
-            <p> &copy 2019 by Leading with Lee Magazine</p>
-        </div>
-      </div>
-    </div>
-    </footer>
+
+            <div class="blogPostOne">
+                <div class="blogPostPhoto"> </div>
+                  <h2 class="blog">10 Boss Millennials You Should<br> Get to Know!</h2>
+                  <p>For the last five years, Leading with Lee Magazine had the pleasure of successfully 
+                    creating a platform for emerging and seasoned Boss Millennials to connect, build, and grow through 
+                    storytelling (interviews), resources, and tools. Today, we highlight some of our favorite influential 
+                    boss millennials that you should get to know and do business with....
+                  </p>
+                </div>
+            <div class="blogPostTwo">
+              <div class="blogPostPhotoTwo"> </div>
+            <h2 class="blog">The Pros and Cons of Having<br>Both a 9 to 5 and a Side Hustle</h2>
+            <p>Today, multiple streams of income appear to be a necessity. The fastest way to create wealth is to earn more.
+              A side hustle can be a great way to make money and pursue a passion; however, it takes time. Side hustles require a 
+              lot of time, focus, and energy. Having a side hustle on top of a full-time job can be draining, especially if the
+              side hustle is demanding. Balancing both can undoubtedly have its pros and cons. 
+              Let's explore some of those options.....
+            </p>
+          </div>
+
+           
+          <footer class="footer">
+              <div class="footer-body">
+                <div class="footer-title"><h3> Where Boss Millennials Connect, Build, & Grow!</h3></div>
+                <div class="footer-info"> 
+                  <p> Join Our Mailing List: </p>
+                  <form>
+                      <div class="form-row">
+                        <div class="col">
+                          <input type="text" class="form-control" placeholder="Name">
+                        </div>
+                        <div class="col">
+                          <input type="text" class="form-control" placeholder="email address">
+                        </div>
+                        <div class="btn">
+                            <button type="submit" value="Submit"> Submit </button>
+                        </div>
+                      </div>
+                    </form>
+                    <br>
+                  <a href="https://www.facebook.com/leadingwithlee/"><i class="fab fa-facebook fa-2x"></i></a>
+                  <a href="https://www.instagram.com/lwlmagazine/"><i class="fab fa-instagram fa-2x"></i></a>
+                  <a href="https://www.pinterest.com/whetstonelee/"><i class="fab fa-pinterest fa-2x"></i></a>
+                  <a href="https://www.pinterest.com/whetstonelee/"><i class="fab fa-twitter fa-2x"></i></a>
+                  <a href="https://www.youtube.com/channel/UCxPWnyBdntmbR8cSzbzsmYQ/featured?view_as=subscriber"><i class="fab fa-youtube fa-2x"></i></a>
+                  <div class="copyright">
+                    <br>
+                      <p> &copy 2019 by Leading with Lee Magazine</p>
+                  </div>
+                </div>
+              </div>
+              </footer>
+          
 
     </div>
 </body>

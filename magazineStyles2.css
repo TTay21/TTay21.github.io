@@ -1,0 +1,288 @@
+h1 {
+    display: inline;
+    font-family: 'Lobster Two', cursive;
+    color: #ffffff;
+    font-size: 2.5em
+}
+
+.grid {
+    display: grid;
+    min-height: 100vh;
+    min-width: 100%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 3fr 1fr;
+    background-color: #e0e0e0;
+    
+ 
+}
+
+nav {
+    display: inline-flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.header {
+    grid-column: 1 / span 4;
+    grid-row: 1; 
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Noto Sans TC', sans-serif;
+    color: #666666
+}
+
+#buttonA, #dropdownButtonA {
+    text-decoration: none;
+    font-family: 'Noto Sans TC', sans-serif;
+    color: #666666
+}
+
+
+.dropdownButton {
+    visibility:hidden;
+}
+
+.button, .dropdownButton {
+    background-color: #fafafa;
+    height: 5vh;
+    width: 12.15vw;
+    padding-top: 10px;
+    text-align: center;
+    z-index: 5;
+}
+
+.button:hover, .dropdownButton:hover {
+    background-color: #666666;
+}
+
+.photoButton:hover {
+    background-color: #D6A724
+}
+
+.button:hover #buttonA, .dropdownButton:hover #dropdownButtonA {
+    color: #fafafa
+}
+
+.button:hover .dropdownButton {
+    visibility: visible;
+}
+
+.galleryButtonArea {
+    grid-column: 4;
+    grid-row: 4;
+}
+
+.galleryButton {
+    height: 50px;
+    width: 100px;
+}
+
+.fas {
+    margin-left: 20vw;
+}
+
+.contentOne {
+    grid-column: 1;
+    grid-row: 2;
+
+}
+.contentTwo {
+    grid-column: 2;
+    grid-row: 2;
+
+}
+.contentThree {
+    grid-column: 3;
+    grid-row: 2;
+
+}
+.contentFour {
+    grid-column: 4;
+    grid-row: 2;
+ 
+}
+.contentOnePhoto {
+    height: 90%;
+    width: 90;
+    margin-top: 10vh;
+    background-image: url(mag6.PNG);
+    background-size: cover;
+    background-position: center;
+}
+
+.contentOnePhoto:hover {
+    cursor: pointer;
+    transition-duration: 0.3s;
+    transform: scale(1.2);
+  }
+
+.contentTwoPhoto {
+    height: 90%;
+    width: 90;
+    margin-top: 10vh;
+    background-image: url(mag5.PNG);
+    background-size: cover;
+    background-position: center;
+}
+
+.contentTwoPhoto:hover {
+    cursor: pointer;
+    transition-duration: 0.3s;
+    transform: scale(1.2);
+  }
+
+.contentThreePhoto {
+    height: 90%;
+    width: 90;
+    margin-top: 10vh;
+    background-image: url(mag4.PNG);
+    background-size: cover;
+    background-position: center;
+}
+.contentThreePhoto:hover {
+    cursor: pointer;
+    transition-duration: 0.3s;
+    transform: scale(1.2);
+  }
+
+.contentFourPhoto {
+    height: 90%;
+    width: 90;
+    margin-top: 10vh;
+    background-image: url(mag3.PNG);
+    background-size: cover;
+    background-position: center;
+}
+.contentFourPhoto:hover {
+    cursor: pointer;
+    transition-duration: 0.3s;
+    transform: scale(1.2);
+  }
+
+
+.footer {
+    grid-column: 1 / span 4;
+    grid-row:  6;
+    background-color: #000000;
+    color: #D6A724;
+    text-align: center;
+    font-family: 'Prata', serif;
+  
+  }
+  
+  .footer-title {
+    font-family: 'Prata', serif;
+  }
+
+  .mobilemenu {
+      display: none;
+  }
+  @media screen and (max-width: 1120px) {
+    .button {
+        height: 7vh;
+    }
+  }
+  @media screen and (max-width: 767px) {
+        .grid {
+            display: grid;
+            min-height: 100vh;
+            min-width: 100%;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 2fr 2fr 2fr 2fr;
+            background-color: #e0e0e0;   
+        }
+
+
+        nav {
+            display: block;
+            width: 10vw;
+        }
+
+        .navMenu  {
+            display: none;
+        }
+        .mobilemenu {
+            display: block;
+            width: 90vw;
+        }
+
+        .contentOnePhoto {
+            height: 380px;
+            width: 300px;
+            margin-top: 5vh;
+            margin-left: 10vw;
+        }
+        .contentTwoPhoto {
+            height: 380px;
+            width: 300px;
+            margin-top: 5vh;
+            margin-left: 20vw;
+        }
+        .contentThreePhoto {
+            height: 380px;
+            width: 300px;
+            margin-top: 5vh;
+            margin-left: 20vw;
+        }
+        .contentFourPhoto {
+            height: 380px;
+            width: 300px;
+            margin-top: 5vh;
+            margin-left: 20vw;
+        }
+        .button {
+            display: block;
+            background-color: #000000;
+            height: 10vh;
+            width: 15vw;
+            padding-top: 10px;
+            text-align: center;
+            z-index: 5;
+        }
+        .button:hover .dropdownButton {
+            display: none;
+        }
+
+        .header {
+            grid-column: 1;
+            grid-row: 1;
+        }
+        .contentOne {
+            grid-column: 1;
+            grid-row: 2;
+        }
+        .contentTwo {
+            grid-column: 1;
+            grid-row: 3;
+        }
+        .contentThree {
+            grid-column: 1;
+            grid-row: 4;
+        }
+        .contentFour {
+            grid-column: 1;
+            grid-row: 5;
+        }
+
+        .footer {
+            grid-column: 1;
+            grid-row: 8;
+        }
+        .galleryButtonArea {
+            grid-column: 1;
+            grid-row: 2;
+        }
+        
+        .galleryButton, .galleryButton2 {
+            height: 50px;
+            width: 100px;
+            margin-left: 300px;
+            margin-bottom: 100px;
+        }
+
+
+  }
+
+  
+  
